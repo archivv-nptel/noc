@@ -16,42 +16,37 @@
       justify-content: center;
       align-items: center;
       background: #ffffff;
-      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* NPTEL-like button */
+    /* ✅ SIZE-CORRECT NPTEL BUTTON */
     .nptel-btn {
       display: inline-block;
-      background-color: #2f6fbd;        /* NPTEL blue */
-      color: #ffffff;
-      padding: 14px 36px;
-      font-size: 16px;
-      font-weight: 600;
-      border-radius: 6px;
+      background-color: #337ab7;   /* exact bootstrap/NPTEL blue */
+      color: #fff;
+      padding: 8px 16px;           /* 🔥 THIS fixes the “too big” issue */
+      font-size: 14px;             /* ✅ exact */
+      font-weight: 500;            /* ✅ normal (not bold-heavy) */
+      border-radius: 4px;          /* ✅ smaller radius */
       text-decoration: none;
-      border: 1px solid #2a64aa;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #2e6da4;
+      line-height: 1.42857143;     /* bootstrap standard */
+      cursor: pointer;
+      box-shadow: none;            /* ✅ NPTEL button is mostly flat */
     }
 
     .nptel-btn:hover {
-      background-color: #255fa3;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-    }
-
-    .nptel-btn:active {
-      background-color: #1e4f8a;
+      background-color: #286090;
+      border-color: #204d74;
     }
   </style>
 </head>
 <body>
 
-  <!-- Same-folder PDF -->
   <a
     class="nptel-btn"
     href="NPTEL25CS46S34740005104382811.pdf"
     target="_blank"
-    rel="noopener"
   >
     Course Certificate
   </a>
